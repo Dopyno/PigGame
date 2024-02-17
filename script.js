@@ -25,4 +25,7 @@ btnRoll.addEventListener('click', function () {
   diceEl.src = `images/dice-${dice}.png`;
 
   //* 3. Check for rolled 1: if true switch to next player
+  if(dice === 1){
+    console.log('dice value == 1 reset player points to 0');
+  }
 });
